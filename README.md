@@ -5,4 +5,4 @@
 | **#** | **Title** | **Language** | **Difficulty** | **Main Tag** |
 | --- | --- | --- | --- | --- |
 | ... | ... | ... | ... | ... |
-| 1 | [Two Sum](https://leetcode-cn.com/problems/two-sum/) | C++ | Easy | Array |
+| 283 | [Move Zeroes](https://leetcode-cn.com/problems/move-zeroes/) | [C++](./algorithms/cpp/283.move-zeroes.cpp) | Easy | Array |
