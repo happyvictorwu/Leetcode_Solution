@@ -62,6 +62,8 @@
  */
 class Solution {
 public:
+    // Time Complexity: O(n)
+    // Space Complexity: O(1)
     int removeDuplicates(vector<int>& nums) {
         if ( nums.size() == 0 || nums.size() == 1 || nums.size() == 2 ) {
             return nums.size();
@@ -80,4 +82,3 @@ public:
 
     }
 };
-
