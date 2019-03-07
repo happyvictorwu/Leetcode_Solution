@@ -66,6 +66,8 @@
  */
 class Solution {
 public:
+    // Time Complexity: O(n)
+    // Space Complexity: O(1)
     int removeElement(vector<int>& nums, int val) {
         int k = 0;  // k是非val元素的个数
         

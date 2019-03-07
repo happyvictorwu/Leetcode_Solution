@@ -29,6 +29,8 @@
  */
 class Solution {
 public:
+    // Time Complexity: O(n)
+    // Space Comlexity: O(1)
     void moveZeroes(vector<int>& nums) {
         int i = 0, j = 0;   // i代表非0元素的最后位置+1， j是遍历指针。 最后[i, j)的元素都为0
         for (; j < nums.size(); ++j) {

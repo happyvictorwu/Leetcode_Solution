@@ -1,18 +1,18 @@
 /*
- * @lc app=leetcode id=26 lang=cpp
+ * @lc app=leetcode id=80 lang=cpp
  *
- * [26] Remove Duplicates from Sorted Array
+ * [80] Remove Duplicates from Sorted Array II
  *
- * https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
+ * https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/
  *
  * algorithms
- * Easy (39.67%)
- * Total Accepted:    531.1K
- * Total Submissions: 1.3M
- * Testcase Example:  '[1,1,2]'
+ * Medium (39.52%)
+ * Total Accepted:    189.1K
+ * Total Submissions: 478K
+ * Testcase Example:  '[1,1,1,2,2,3]'
  *
- * Given a sorted array nums, remove the duplicates in-place such that each
- * element appear only once and return the new length.
+ * Given a sorted array nums, remove the duplicates in-place such that
+ * duplicates appeared at most twice and return the new length.
  * 
  * Do not allocate extra space for another array, you must do this by modifying
  * the input array in-place with O(1) extra memory.
@@ -20,20 +20,20 @@
  * Example 1:
  * 
  * 
- * Given nums = [1,1,2],
+ * Given nums = [1,1,1,2,2,3],
  * 
- * Your function should return length = 2, with the first two elements of nums
- * being 1 and 2 respectively.
+ * Your function should return length = 5, with the first five elements of nums
+ * being 1, 1, 2, 2 and 3 respectively.
  * 
  * It doesn't matter what you leave beyond the returned length.
  * 
  * Example 2:
  * 
  * 
- * Given nums = [0,0,1,1,1,2,2,3,3,4],
+ * Given nums = [0,0,1,1,1,1,2,3,3],
  * 
- * Your function should return length = 5, with the first five elements of nums
- * being modified to 0, 1, 2, 3, and 4 respectively.
+ * Your function should return length = 7, with the first seven elements of
+ * nums being modified to 0, 0, 1, 1, 2, 3 and 3 respectively.
  * 
  * It doesn't matter what values are set beyond the returned length.
  * 
@@ -58,25 +58,26 @@
  * print(nums[i]);
  * }
  * 
+ * 
  */
 class Solution {
 public:
-    // Time Complexity: O(n)
-    // Space Complexity: O(1)
     int removeDuplicates(vector<int>& nums) {
-        if ( !nums.size() ) {
-            return 0;
+        if ( nums.size() == 0 || nums.size() == 1 || nums.size() == 2 ) {
+            return nums.size();
         }
-        
-        int k = 1;  // [0, k)表示不重复的元素,即不重复元素的个数
 
-        for (int i = 1; i < nums.size(); ++i) {
-            if (nums[i] != nums[k - 1]) {
+        int k = 2;  // k之前的元素为
+        for (int i = 2; i < nums.size(); ++i) {
+            if ( nums[i] == nums[k-1] && nums[i] == nums[k-2] ) {
+                continue;
+            } else {
                 nums[k++] = nums[i];
             }
         }
 
         return k;
+
     }
 };
 
