@@ -33,8 +33,21 @@
  */
 class Solution {
 public:
+    // Time Complexity: O(nlogk), O(n)
+    // Space Complexity: O(k),O(1)
     int findKthLargest(vector<int>& nums, int k) {
-        
+        // assert(0 < k && k <= nums.size());
+        priority_queue<int, vector<int>, greater<int>> pq;
+        for (int e: nums) {
+            if (pq.size() < k) {
+                pq.push(e);
+            } else if (e > pq.top()) {
+                pq.pop();
+                pq.push(e);
+            }
+        }
+
+        return pq.top();
     }
 };
 
