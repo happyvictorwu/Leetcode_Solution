@@ -66,3 +66,13 @@ public:
     }
 };
 
+// int main() {
+
+//     vector<int> nums = {2,7,11,15};
+
+//     print_vec( Solution().twoSum(nums, 9) );
+
+
+
+//     return 0;
+// }
