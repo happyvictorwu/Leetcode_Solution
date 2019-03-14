@@ -5,7 +5,7 @@
 
 | **#** | **Title** | **Language** | **Difficulty** | **Main Tag** |
 | --- | --- | --- | --- | --- |
-| ... | ... | ... | ... | ... |
+| 344 | [Reverse String](https://leetcode.com/problems/reverse-string/description/) | [C++](./algorithms/cpp/344.reverse-string/Solution.cpp) | Easy | Array |
 | 283 | [Move Zeroes](https://leetcode-cn.com/problems/move-zeroes/) | [C++](./algorithms/cpp/283.move-zeroes/Solution.cpp) | Easy | Array |
 | 167 | [Two Sum II](https://leetcode.com/problems/merge-sorted-array/description/) | [C++](./algorithms/cpp/167.two-sum-ii-input-array-is-sorted/Solution2.cpp) | Easy | Array |
 | 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/description/) | [C++](./algorithms/cpp/125.valid-palindrome/Solution.cpp) | Easy | Array |
