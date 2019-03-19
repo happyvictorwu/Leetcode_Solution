@@ -15,3 +15,4 @@
 | 75 | [Sort Colors](https://leetcode.com/problems/sort-colors/description/) | Medium | [C++](./algorithms/cpp/75.sort-colors/Solution.cpp) | Array |
 | 27 | [Remove Element](https://leetcode.com/problems/remove-element/description/) | Easy | [C++](./algorithms/cpp/27.remove-element/Solution.cpp) | Array |
 | 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/) | Easy | [C++](./algorithms/cpp/26.remove-duplicates-from-sorted-array/Solution.cpp) | Array |
+| 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/) | Medium | [C++](./algorithms/cpp/11.container-with-most-water/Solution.cpp) | Array |
