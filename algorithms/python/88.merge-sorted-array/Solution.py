@@ -51,5 +51,5 @@ class Solution:
             end -= 1
         # when r1 < 0, elements of nums2 are not finish
         if r1 < 0:
-            nums1[:r2+1] = nums2[:r2+1] # [0, l2+1)
+            nums1[:r2+1] = nums2[:r2+1] # [0, r2+1)
         # when r2 < 0, nums1 are sorted, we have nothing to do
