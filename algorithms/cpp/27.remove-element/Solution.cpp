@@ -65,20 +65,17 @@
  * 
  */
 class Solution {
+// Time Complexity: O(n)
+// Space Complexity: O(1)
 public:
-    // Time Complexity: O(n)
-    // Space Complexity: O(1)
     int removeElement(vector<int>& nums, int val) {
-        int k = 0;  // k是非val元素的个数
+        int ans = 0;
+        int n = nums.size();
         
-        //[0,k)的元素是非val元素
-        for (int i = 0; i < nums.size(); ++i) {
-            if ( nums[i] != val ) {
-                nums[k++] = nums[i];
-            }
-        }
-
-        return k;
+        for (int i = 0; i < n; i++)
+            if (nums[i] != val)
+                nums[ans++] = nums[i];
+        
+        return ans;
     }
 };
-
